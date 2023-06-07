@@ -8,7 +8,61 @@ Everything you do here is contained within this one codespace. There is no repos
 
 ## Environment
 
-The Anaconda environment is in `environment.yml` in the root of the repository. Select conda as the python interpreter within Visual Studio Code in the codespace to execute the code.
+Anaconda can be installed using Homebrew on macOS:
+
+```
+brew install --cask anaconda
+```
+
+Or using Chocolatey on Windows:
+
+```
+choco install anaconda3
+```
+
+The Anaconda environment is in `environment.yml` in the root of the repository. 
+
+Select conda as the python interpreter within Visual Studio Code in the codespace to execute the code.
+
+Then run the following command to create the environment:
+
+```
+conda env create -f environment.yml
+```
+
+You can then activate the environment using:
+
+```
+conda activate datathinking.org
+```
+
+And you can select the environment as the kernel in Jupyter Notebooks using Visual Studio code: https://code.visualstudio.com/docs/datascience/jupyter-kernel-management
+
+The environment is created using:
+
+```
+conda create --name datathinking.org \
+  python==3.11 \
+  ipykernel \
+  python-duckdb \
+  jupysql=0.6.6 \
+  jaxlib \
+  jax \
+  altair \
+  seaborn \
+  pandas \
+  polars \
+  scikit-learn \
+  matplotlib \
+  pyarrow \
+  duckdb-engine \
+  dbt-core \
+  jupyter \
+  notebook \
+  pip \
+  pyyaml \
+  networkx 
+```
 
 ## Data Processing
 Data such as the 311 Calls dataset lives in our Amazon Simple Storage Service (S3) bucket, `s3://datathinking.org`.
