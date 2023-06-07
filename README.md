@@ -27,6 +27,7 @@ pip install --upgrade "jax[cpu]"
 pip install jupysql
 pip install duckdb==0.8.0
 pip install duckdb-engine
+pip install fastparquet pyarrow
 ```
 
 You can then activate the environment using:
