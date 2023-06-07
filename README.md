@@ -18,24 +18,6 @@ Or using Chocolatey on Windows:
 choco install anaconda3
 ```
 
-The Anaconda environment is in `environment.yml` in the root of the repository. 
-
-Select conda as the python interpreter within Visual Studio Code in the codespace to execute the code.
-
-Then run the following command to create the environment:
-
-```
-conda env create -f environment.yml
-```
-
-You can then activate the environment using:
-
-```
-conda activate datathinking.org
-```
-
-And you can select the environment as the kernel in Jupyter Notebooks using Visual Studio code: https://code.visualstudio.com/docs/datascience/jupyter-kernel-management
-
 The environment is created using:
 
 ```
@@ -46,3 +28,14 @@ pip install jupysql
 pip install duckdb==0.8.0
 pip install duckdb-engine
 ```
+
+You can then activate the environment using:
+
+```
+conda activate datathinking.org
+```
+
+Select conda as the python interpreter within Visual Studio Code in the codespace to execute the code.
+
+And you can select the environment as the kernel in Jupyter Notebooks using Visual Studio code: https://code.visualstudio.com/docs/datascience/jupyter-kernel-management
+
