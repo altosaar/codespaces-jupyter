@@ -30,6 +30,7 @@ pip install duckdb-engine
 pip install fastparquet pyarrow
 pip install "vegafusion[embed]"
 pip install "vegafusion-jupyter[embed]"
+pip install polars
 ```
 
 You can then activate the environment using:
