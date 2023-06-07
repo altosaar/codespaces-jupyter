@@ -28,6 +28,8 @@ pip install jupysql
 pip install duckdb==0.8.0
 pip install duckdb-engine
 pip install fastparquet pyarrow
+pip install "vegafusion[embed]"
+pip install "vegafusion-jupyter[embed]"
 ```
 
 You can then activate the environment using:
