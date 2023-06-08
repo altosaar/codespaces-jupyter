@@ -22,6 +22,17 @@ Once anaconda is installed, the environment can be created using the following c
 
 ```
 conda create --name datathinking.org python==3.11 ipykernel altair pandas scikit-learn matplotlib jupyter pip scipy
+```
+
+Then, activate the environment using:
+
+```
+conda activate datathinking.org
+```
+
+And install the following packages:
+
+```
 pip install --upgrade pip
 pip install --upgrade "jax[cpu]"
 pip install jupysql
@@ -31,12 +42,6 @@ pip install fastparquet pyarrow
 pip install "vegafusion[embed]"
 pip install "vegafusion-jupyter[embed]"
 pip install polars
-```
-
-You can then activate the environment using:
-
-```
-conda activate datathinking.org
 ```
 
 Select conda as the python interpreter within Visual Studio Code in the codespace to execute the code.
