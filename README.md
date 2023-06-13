@@ -64,3 +64,5 @@ To uninstall anaconda on homebrew:
 brew uninstall anaconda --cask
 ```
 
+On Windows machines, we recommend using Windows Subsystem Linux and Visual Studio code. Windows Subsystem Linux can be installed here: https://learn.microsoft.com/en-us/windows/wsl/install
+
