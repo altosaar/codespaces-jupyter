@@ -52,17 +52,40 @@ Then, select the `datathinking.org` environment in the python interpreter within
 
 And you can select the environment as the kernel in Jupyter Notebooks using Visual Studio code: https://code.visualstudio.com/docs/datascience/jupyter-kernel-management. You may need to reload the window to see the `datathinking.org` kernel (open the command palette and type `Developer: Reload Window`).
 
-To remove the `datathinking.org` environment, use the following command:
+## Debugging Notes
+
+* To remove the `datathinking.org` environment, use the following command:
 
 ```
 conda deactivate && conda env remove -n datathinking.org
 ```
 
-To uninstall anaconda on homebrew:
+* To uninstall anaconda on homebrew:
 
 ```
 brew uninstall anaconda --cask
 ```
 
-On Windows machines, we recommend using Windows Subsystem Linux and Visual Studio code. Windows Subsystem Linux can be installed here: https://learn.microsoft.com/en-us/windows/wsl/install
+* On Windows machines, we recommend using Windows Subsystem Linux and Visual Studio code. Windows Subsystem Linux can be installed here: https://learn.microsoft.com/en-us/windows/wsl/install
+
+* For issues related to `conda` not being found, it might be because the homebrew software was unable to add the `conda` command to the `PATH`. This can usually be fixed on Mac by opening (or creating, if it doesn't exist) a file in the user directory called `~/.zshrc` for zshell or `~/.bashrc` for bash, and adding the following line: 
+
+```
+export PATH=/anaconda3/bin:$PATH
+```
+
+* You can check whether the Anaconda path is on your terminal's `PATH` variable by using the `echo` command to print the contents of a command line variable: 
+
+```
+echo $PATH
+```
+
+If you don't see Anaconda's path listed, you might need to find it using:
+
+```
+echo $HOMEBREW_PREFIX
+ls $HOMEBREW_PREFIX/anaconda3/bin
+```
+
+And seeing if these directories exist or not.
 
