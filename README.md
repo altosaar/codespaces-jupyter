@@ -54,3 +54,9 @@ To remove the `datathinking.org` environment, use the following command:
 conda deactivate && conda env remove -n datathinking.org
 ```
 
+To uninstall anaconda on homebrew:
+
+```
+brew uninstall anaconda --cask
+```
+
