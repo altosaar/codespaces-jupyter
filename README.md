@@ -44,7 +44,11 @@ pip install "vegafusion-jupyter[embed]"
 pip install polars
 ```
 
-Select conda as the python interpreter within Visual Studio Code in the codespace to execute the code.
+Next, clone this repository in Visual Studio Code (instructions here: https://code.visualstudio.com/docs/sourcecontrol/overview).
+
+Then, open one of the Jupyter notebooks with `.ipynb` extension from inside Visual Studio Code that has the `datathinking.org-codespace` repository open.
+
+Then, select the `datathinking.org` environment in the python interpreter within Visual Studio Code in the codespace to execute the code.
 
 And you can select the environment as the kernel in Jupyter Notebooks using Visual Studio code: https://code.visualstudio.com/docs/datascience/jupyter-kernel-management. You may need to reload the window to see the `datathinking.org` kernel (open the command palette and type `Developer: Reload Window`).
 
