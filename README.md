@@ -71,8 +71,10 @@ brew uninstall anaconda --cask
 * For issues related to `conda` not being found, it might be because the homebrew software was unable to add the `conda` command to the `PATH`. This can usually be fixed on Mac by opening (or creating, if it doesn't exist) a file in the user directory called `~/.zshrc` for zshell or `~/.bashrc` for bash, and adding the following line: 
 
 ```
-export PATH=/anaconda3/bin:$PATH
+export PATH=$HOMEBREW_PREFIX/anaconda3/bin:$PATH
 ```
+
+Then close the terminal and reopen it, or run `source ~/.zshrc` to reload the `PATH` variable, and try running the above steps again.
 
 * You can check whether the Anaconda path is on your terminal's `PATH` variable by using the `echo` command to print the contents of a command line variable: 
 
