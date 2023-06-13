@@ -48,3 +48,9 @@ Select conda as the python interpreter within Visual Studio Code in the codespac
 
 And you can select the environment as the kernel in Jupyter Notebooks using Visual Studio code: https://code.visualstudio.com/docs/datascience/jupyter-kernel-management. You may need to reload the window to see the `datathinking.org` kernel (open the command palette and type `Developer: Reload Window`).
 
+To remove the `datathinking.org` environment, use the following command:
+
+```
+conda deactivate && conda env remove -n datathinking.org
+```
+
