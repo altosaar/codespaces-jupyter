@@ -4,6 +4,15 @@ Welcome to your shiny new codespace, data thinkers! We've got everything fired u
 
 If you use GitHub Codespaces, check out how to version control your code here: https://docs.github.com/en/codespaces/developing-in-codespaces/using-source-control-in-your-codespace
 
+## Visual Studio Code Basics
+
+If this is your first time using Visual Studio code, consider watching some of the introductory videos or browsing the documentation here: https://code.visualstudio.com/docs/getstarted/introvideos
+
+* Take a look at the PDF of the keyboard shortcuts for your operating system: https://code.visualstudio.com/docs/getstarted/keybindings
+  * Mac: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf
+  * Windows: [https://go.microsoft.com/fwlink/?linkid=832145](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+  * Linux: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf
+
 ## How to install the data thinking environment
 
 Anaconda can be installed using Homebrew on macOS:
